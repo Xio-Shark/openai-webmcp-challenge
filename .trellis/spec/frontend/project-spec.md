@@ -25,17 +25,20 @@
 
 ---
 
-## 3. 技术栈架构
+## 3. 技术栈架构与设计系统
 - **前端框架**：React 19 + TypeScript + Vite 8
-- **样式与组件**：Tailwind CSS v4 + Lucide React 图标 + Canvas Confetti 庆祝动效
+- **设计风格**：Linear / Vercel Monochrome 工业级极简深色灰阶体系（采用纯粹的黑/深灰/锌白层级，克制使用色彩，杜绝 RGB 霓虹）
+- **图标与动效**：Lucide React 精细图标
 - **WebMCP 抽象层**：`src/lib/webmcp.ts` 自动适配原生 `document.modelContext` 与 Dev 模拟模式。
+- **线上分发**：Cloudflare Pages 全球 CDN（`https://openai-webmcp-challenge.pages.dev`）
 
 ---
 
-## 4. 目录规范
+## 4. 目录与工作流规范
 - `src/`
   - `lib/webmcp.ts`：WebMCP 核心桥接与工具注册。
-  - `App.tsx`：控制台主应用（拓扑视图、工具视图、审计日志流）。
-  - `index.css`：暗黑极简视觉设计。
+  - `App.tsx`：控制台主应用（极简拓扑卡片、注册工具清单、实时调用审计日志流）。
+  - `index.css`：极简灰阶基础样式。
+- `.github/workflows/`：自动化持续集成与部署工作流（`deploy.yml`）。
 - `.trellis/`：Trellis 规范管理与任务跟踪。
-- `README.md` & `LICENSE`：符合 Devpost 参赛标准的开源说明与 MIT 许可证。
+- `README.md` & `LICENSE`：符合 Devpost 参赛标准的开源说明、Live Demo 徽章与 MIT 许可证。

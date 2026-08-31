@@ -10,16 +10,20 @@
   2. `scale_service_replicas` (服务扩缩容)
   3. `optimize_gpu_memory` (显存/KV Cache清理)
   4. `run_inference_benchmark` (性能压测)
-- [x] **现代化高质感 UI**：
-  - 暗黑风格、低饱和蓝青莫兰迪科技感。
-  - 拓扑卡片实时动态响应（显存进度条、健康指示灯、延迟数据更新）。
-  - 右侧实时执行审计日志流（Audit Stream）。
-- [x] **开源规范健全**：
+- [x] **工业级极简设计重构（Linear / Vercel Monochrome 风格）**：
+  - 彻底移除高饱和霓虹与 RGB 渐变色，采用灰阶单色（`#09090b` 底色、`zinc` 系列卡片、微描边与紧凑数据网格）。
+  - 拓扑卡片实时动态响应（单色显存条、状态指示标、P99 延迟与 Pod 计数更新）。
+  - 右侧实时执行审计日志流（Audit Stream）与精确耗时标示。
+- [x] **开源规范健全与匿名化**：
   - 包含顶级 MIT License 与完备的 README 说明。
-- [ ] **线上部署与多端联调**：
-  - 部署至 Cloudflare Pages 或 Vercel。
-  - Chrome 实验性 WebMCP flag 联调。
-  - 录制 2~3 分钟 YouTube 演示视频。
+  - Git Commit 历史 100% 匿名化（统一使用 `Xio-Shark` 开发者 ID，无个人隐私信息）。
+- [x] **线上生产部署（Cloudflare Pages）**：
+  - 成功部署至 Cloudflare Pages 全球 CDN，分配公网独立地址：`https://openai-webmcp-challenge.pages.dev`。
+  - 添加 GitHub Actions 自动化持续部署工作流（`.github/workflows/deploy.yml`）。
+- [ ] **多端联调与提交材料录制**：
+  - Chrome 实验性 WebMCP flag (`chrome://flags/#enable-webmcp-testing`) 实测联调。
+  - 录制 2~3 分钟 YouTube 演示视频（附带人声解说与操作演示）。
+  - 准备 Devpost 表单文案并于 9 月 4 日 04:00 前完成提交。
 
 ## 3. 验收标准 (Acceptance Criteria)
 1. `pnpm build` 静态类型检测与构建 0 错误、0 警告。
