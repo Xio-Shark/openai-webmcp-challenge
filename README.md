@@ -5,6 +5,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![WebMCP Standard](https://img.shields.io/badge/WebMCP-Compliant-00a8e8)](https://webmcp.devpost.com/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Cloudflare_Pages-f38020)](https://openai-webmcp-challenge.pages.dev)
+
+🔗 **Live Application URL**: [https://openai-webmcp-challenge.pages.dev](https://openai-webmcp-challenge.pages.dev)
 
 ---
 
