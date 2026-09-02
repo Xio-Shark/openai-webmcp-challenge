@@ -20,10 +20,14 @@
 - [x] **线上生产部署（Cloudflare Pages）**：
   - 成功部署至 Cloudflare Pages 全球 CDN，分配公网独立地址：`https://openai-webmcp-challenge.pages.dev`。
   - 添加 GitHub Actions 自动化持续部署工作流（`.github/workflows/deploy.yml`）。
-- [ ] **多端联调与提交材料录制**：
-  - Chrome 实验性 WebMCP flag (`chrome://flags/#enable-webmcp-testing`) 实测联调。
-  - 录制 2~3 分钟 YouTube 演示视频（附带人声解说与操作演示）。
-  - 准备 Devpost 表单文案并于 9 月 4 日 04:00 前完成提交。
+- [x] **冲刺提交前开发与配置（已全链路验证通过）**：
+  - [x] 步骤 1：将极简产品截图放入仓库并嵌入 README.md。
+  - [x] 步骤 2：配置 GitHub 仓库 Topics 标签与 Homepage 地址。
+  - [x] 步骤 3：编写 Devpost 提交全套英文问答文档 (`docs/devpost-submission.md`)。
+  - [x] 步骤 4：完成线上生产环境 4 大 WebMCP 工具 E2E 自动化调用与审计流响应验证。
+- [ ] **最终申报行动（由用户完成）**：
+  - [ ] 录制 2~3 分钟 YouTube 演示视频（附带人声解说与操作演示）。
+  - [ ] 前往 Devpost 表单复制 `docs/devpost-submission.md` 完成最终提交。
 
 ## 3. 验收标准 (Acceptance Criteria)
 1. `pnpm build` 静态类型检测与构建 0 错误、0 警告。
