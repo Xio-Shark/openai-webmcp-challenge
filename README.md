@@ -24,6 +24,12 @@ The autonomous agent directly discovers and executes the appropriate WebMCP tool
 
 ---
 
+## 📸 Interface Preview
+
+![InfraPilot Dashboard Screenshot](./docs/screenshot.png)
+
+---
+
 ## 🛠️ Registered WebMCP Tools
 
 InfraPilot registers 4 core tools on `document.modelContext`:
